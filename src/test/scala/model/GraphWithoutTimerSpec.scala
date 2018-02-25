@@ -12,8 +12,8 @@ class GraphWithoutTimerSpec extends WordSpec with Matchers {
           "ABB" -> "016",
           "ABBECCD" -> "0169723",
           "ABCDE" -> "01234",
-          "AA" -> "50",
-          "AAAA" -> "5050"
+          "AA" -> "05",
+          "AAAA" -> "0505"
         )
 
         walkWithLexicographical.map { case (walk, lexicographical) =>

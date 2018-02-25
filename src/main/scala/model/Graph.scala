@@ -14,7 +14,7 @@ case class Graph(vertices: Map[Vertex, Set[Vertex]]) {
           Graph.INVALID_LEXICOGRAPHICAL_WALK
         case lexicographicalWalks =>
           lexicographicalWalks
-            .max
+            .min
             .getOrElse(Graph.INVALID_LEXICOGRAPHICAL_WALK)
       }
     }
